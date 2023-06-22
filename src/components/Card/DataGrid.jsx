@@ -16,7 +16,7 @@ export default function DataGrid({ data, units }) {
     <div className="grid grid-col-1 sm:grid-cols-2 overflow-none">
       <DataDescription
         Icon={BsClouds}
-        description="Bewölktheit"
+        description="Bewölkung"
         value={data.clouds.all}
         unit="%"
       />
