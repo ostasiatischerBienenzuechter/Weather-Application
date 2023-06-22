@@ -18,18 +18,18 @@ export default function CardTop({ data, icon, units, setUnits }) {
           <DateDisplay data={data} />
         </div>
       </div>
-      <div className="md:space-x-3 divide-x sm:">
+      <div className="sm:space-x-3 max-[639px]:divide-none divide-x max-[639px]:px-2">
         <button
           name="metric"
           onClick={handleUnitsChange}
-          className="text-xl text-white hover:text-orange-200 transition ease-in-out"
+          className="text-xl text-white hover:text-orange-200 transition ease-in-out sm:pr-2 md:pr-0"
         >
           °C
         </button>
         <button
           name="imperial"
           onClick={handleUnitsChange}
-          className="text-xl text-white pl-2 hover:text-orange-200 transition ease-in-out"
+          className="text-xl text-white sm:pl-2 hover:text-orange-200 transition ease-in-out max-[489px]:px-1 max-[550px]:py-2 max-[639px]:pl-4"
         >
           °F
         </button>

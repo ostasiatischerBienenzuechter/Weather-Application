@@ -5,7 +5,7 @@ import CardLoader from "./Utils/CardLoader";
 
 export default function Card({ loading, data, icon, units, setUnits }) {
   return (
-    <div className="w-full max-w-lg sm:max-w-3xl bg-black rounded-3xl py-12 px-6 bg-opacity-50">
+    <div className="max-[550px]:w-screen w-full max-w-lg sm:max-w-3xl bg-black rounded-3xl py-12 px-6 bg-opacity-50">
       {loading ? (
         <CardLoader />
       ) : (
